@@ -1,6 +1,6 @@
 {
   "name": "marvel-app",
-  "version": "1.0.0",
+  "version": "0.2.0",
   "description": "Mettre en oeuvre les différents concepts manipulés au cours du développement d'une application web moderne.",
   "main": "index.js",
   "scripts": {
