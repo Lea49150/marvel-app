@@ -1,0 +1,73 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Style pour l'en-tête */
+h1 {
+  background-color: #333; /* Fond sombre */
+  color: white; /* Texte blanc */
+  font-size: 2em; /* Texte plus grand */
+  font-weight: bold; /* Texte en gras */
+  padding: 20px; /* Espace autour du texte */
+  text-align: center; /* Centrer le texte */
+  margin: 0; /* Retirer les marges par défaut */
+  font-family: 'Arial', sans-serif; /* Police de caractères */
+
+}
+
+/* Style pour la liste des personnages */
+ul#characters {
+  list-style-type: none; /* Retirer les puces de la liste */
+  padding: 0; /* Retirer le padding de la liste */
+  margin: 0; /* Retirer la marge */
+}
+
+ul#characters li {
+  padding: 15px; /* Ajouter de l'espace autour de chaque élément de la liste */
+  border-bottom: 1px solid #ddd; /* Ajouter une bordure fine en bas de chaque élément */
+  font-size: 1.2em; /* Agrandir légèrement la taille de police */
+  font-family: 'Arial', sans-serif; /* Police de caractères */
+}
+
+ul#characters li:last-child {
+  border-bottom: none; /* Pas de bordure pour le dernier élément */
+}
