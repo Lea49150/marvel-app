@@ -1,3 +1,4 @@
+import { getCharacterById, getCharacters } from "./api/characters-api";
 import Layout from "./components/Layout";
 import AboutPage from "./pages/AboutPage";
 import CharactersPage from "./pages/CharactersPage";
@@ -8,7 +9,16 @@ const routes = [
         path: "/",
         element: <Layout />,
         children: [
-            { path: "/", element: <CharactersPage /> },
+            { 
+                path: "/", 
+                element: <CharactersPage />,
+                loader:() => getCharacters(),
+            },
+            {
+                path: "/characters/:id",
+                element: <CharacterDetailPage />,
+                loader: ({ params }) => getCharacterById(params.id),
+            },
             { path: "/about", element: <AboutPage /> },
             { path: "/contact", element: <ContactPage /> },
         ],
