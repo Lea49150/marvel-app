@@ -1,4 +1,4 @@
-function CharacterDetail({ character = {}}) {
+export function CharacterDetail({ character = {}}) {
   return (
     <div>
       <h2>{character.name}</h2>

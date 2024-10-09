@@ -8,9 +8,9 @@ export function getCharacters() {
 
 // fonction getCharacterById
 
-export const getCharacterById({characters = [],id}) {
+export function getCharacterById(id) {
     const character = characters.find((character) => character.id === id);
-    return characters.find((character) => character.id === id);
+    // return characters.find((character) => character.id === id);
     // if (!character) {
     //     throw new Error(`Character with id ${id} not found`);
     // }

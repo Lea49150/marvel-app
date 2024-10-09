@@ -12,7 +12,7 @@ export function CharactersList({characters = []}) {
         <ul id="characters">
           {characters.map((character)=> (
             <li key={character.id}>
-              <Link tp={`character/${character.id}`}>${character.name}</Link>
+              <Link to={`characters/${character.id}`}>{character.name}</Link>
               </li>
           ))}
         </ul>
