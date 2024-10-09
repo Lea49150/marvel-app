@@ -15,5 +15,5 @@ jobs:
       with:
         node-version: 20
         cache: 'npm'
-    - run: npm ci  # comme le npm install mais plus rapide
+    - run: npm ci
     - run: npm run build
