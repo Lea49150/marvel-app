@@ -10,3 +10,5 @@ export function CharacterDetail({ character = {}}) {
     </div>
   );
 }
+
+export default CharacterDetail;

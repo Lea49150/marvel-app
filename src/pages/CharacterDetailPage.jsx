@@ -1,7 +1,7 @@
 // affiche la page de détail d'un personnage, qui elle-même utilise un composant CharacterDetail pour afficher les détails du personnage
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-import { CharacterDetail } from '../components/CharacterDetail';
+import CharacterDetail from '../components/CharacterDetail';
 
 
 const CharacterDetailPage = () => {
