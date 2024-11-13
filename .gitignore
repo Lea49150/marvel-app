@@ -25,3 +25,4 @@ dist-ssr
 
 # Ignore coverage folder
 coverage
+test-report.xml
