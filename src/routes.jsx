@@ -14,7 +14,12 @@ const routes = [
             { 
                 path: "/", 
                 element: <CharactersPage />,
-                loader:() => getCharacters(),
+                loader: ({ request }) => {
+                    const url = new URL(request.url);
+                    const sortBy = url.searchParams.get('sortBy') || 'name';
+                    const order = url.searchParams.get('order') || 'asc';
+                    return getCharacters(sortBy, order);
+                  },
             },
             {
                 path: "/characters/:id",
