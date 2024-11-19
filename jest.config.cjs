@@ -1,7 +1,8 @@
 module.exports = {
   testEnvironment: "jsdom",
+  // transform js and jsx files with babel-jest
   transform: {
-    "^.+\\.jsx?$": "babel-jest",
+    "^.+\\.(js|jsx)$": "babel-jest",
   },
   collectCoverageFrom: [
     // Collect coverage from all js or jsx files in src folder
@@ -12,6 +13,8 @@ module.exports = {
     "!src/main.jsx",
     // Exclude App.jsx from coverage
     "!src/App.jsx", 
+    // Exclude Layout.jsx from coverage
+    "!src/Layout.jsx", 
     // Exclude routes.jsx from coverage
     "!src/routes.jsx",
   ],
