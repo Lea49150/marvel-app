@@ -1,5 +1,4 @@
 import { getCharacters, getCharacterById } from './characters-api';
-import characters from '../data/characters.json';
 
 jest.mock('../data/characters.json', () => [
   { id: 1, name: 'Iron Man', modified: '2021-02-01' },
