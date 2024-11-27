@@ -111,6 +111,13 @@ body {
   min-height: 100vh;
 }
 
+/* hide footer on small screens */
+@media (max-width: 600px) {
+  footer {
+    display: none;
+  }
+}
+
 /* This is needed to make the footer stick to the bottom of the page */
 main {
   flex: 1;
@@ -186,3 +193,4 @@ li a {
   color: #333;
   text-decoration: none;
 }
+
