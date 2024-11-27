@@ -26,3 +26,7 @@ dist-ssr
 # Ignore coverage folder
 coverage
 test-report.xml
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
