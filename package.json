@@ -3,7 +3,7 @@
   "description": "Mettre en oeuvre les différents concepts manipulés au cours du développement d'une application web moderne.",
   "main": "index.js",
   "private": true,
-  "version": "1.4.0",
+  "version": "1.5.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
