@@ -18,11 +18,20 @@ export function CharactersList({ characters = [], sortBy, order }) {
 
   return (
     <ul id="characters">
-      {sortedCharacters.map((character) => (
-        <li key={character.id}>
-          <Link to={`characters/${character.id}`}>{character.name}</Link>
-        </li>
-      ))}
+      {sortedCharacters.map((character) => {
+        const formattedDate = new Date(character.modified).toLocaleDateString('en-US', {
+          year: 'numeric',
+          month: 'short',
+          day: 'numeric',
+        });
+        return (
+          <li key={character.id}>
+            <Link to={`characters/${character.id}`}>
+              <strong>{character.name}</strong> - <small>{formattedDate}</small>
+            </Link>
+          </li>
+        );
+      })}
     </ul>
   );
 }

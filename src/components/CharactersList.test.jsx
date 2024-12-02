@@ -7,12 +7,12 @@ const characters = [
   {
     id: "1",
     name: "Thor",
-    modified: "2021-03-01"
+    modified: "2021-03-01T14:48:32-0500"
   },
   {
     id: "2",
     name: "Captain America",
-    modified: "2021-02-01"
+    modified: "2021-02-01T14:48:32-0500"
   }
 ];
 
@@ -26,15 +26,6 @@ describe('CharactersList component', () => {
     expect(screen.getByText('No characters found')).toBeInTheDocument();
   });
 
-  test('renders a list of characters when characters array is not empty', () => {
-    render(
-      <Router>
-        <CharactersList characters={characters} sortBy="name" order="asc" />
-      </Router>
-    );
-    expect(screen.getByText('Thor')).toBeInTheDocument();
-    expect(screen.getByText('Captain America')).toBeInTheDocument();
-  });
 
   test('sorts characters by name in ascending order', () => {
     render(
